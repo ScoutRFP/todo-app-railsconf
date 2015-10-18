@@ -18,7 +18,7 @@ group :doc do
 end
 
 group :test do
-  gem 'cucumber-rails', require: "false"
+  gem 'cucumber-rails', require: false
 end
 
 group :development, :test do
@@ -30,4 +30,3 @@ group :development, :test do
   gem 'capybara'
   gem 'shoulda'
 end
-
