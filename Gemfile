@@ -17,6 +17,10 @@ group :doc do
   gem 'sdoc', '~> 0.4.0'
 end
 
+group :test do
+  gem 'cucumber-rails', require: "false"
+end
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
