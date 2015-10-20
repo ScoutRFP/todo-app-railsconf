@@ -4,10 +4,17 @@
 # instead of editing this one. Cucumber will automatically load all features/**/*.rb
 # files.
 
-ENV['RAILS_ENV'] ||= test
+ENV['RAILS_ENV'] ||= "test"
 
 require 'cucumber/rails'
 require 'capybara/poltergeist'
+require 'rspec/expectations'
+
+RSpec.configure do |config|
+  config.expect_with :rspec do |c|
+    c.syntax = :expect
+  end
+end
 
 Capybara.register_driver :poltergeist do |app|
     Capybara::Poltergeist::Driver.new(app, {debug: false})
