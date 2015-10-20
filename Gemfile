@@ -18,6 +18,7 @@ group :doc do
 end
 
 group :test do
+  gem 'poltergeist'
   gem 'cucumber-rails', require: false
 end
 
