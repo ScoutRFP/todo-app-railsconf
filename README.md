@@ -51,7 +51,7 @@ I leave it to you to decide in how many feature tests and scenarios to split it 
   -  http://railscasts.com/episodes/155-beginning-with-cucumber
   -  http://railscasts.com/episodes/159-more-on-cucumber
 
-## How to get extra bonus points
+## How to get bonus points
 
 -  incorporate [Page Object pattern](http://martinfowler.com/bliki/PageObject.html) into your test suite.
 Additional resources to check:
@@ -61,4 +61,5 @@ Additional resources to check:
   -  TravisCI
   -  Codeship.io
   -  SemaphoreCI
+-  setup tests to be run in real browser (Firefox or Chrome/Chromium) using Selenium WebDriver
 
